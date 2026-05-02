@@ -1,1 +1,1 @@
-web: gunicorn unigroups_project.wsgi --log-file -
+web: python manage.py migrate --noinput && python manage.py collectstatic --noinput && gunicorn unigroups_project.wsgi --bind 0.0.0.0:$PORT --workers 2 --timeout 120 --log-file -
