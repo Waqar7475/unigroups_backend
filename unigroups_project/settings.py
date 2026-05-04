@@ -139,5 +139,3 @@ CORS_ALLOW_HEADERS = [
 CORS_ALLOW_METHODS = ['DELETE', 'GET', 'OPTIONS', 'PATCH', 'POST', 'PUT']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-EOF
-echo "✓ settings.py — APPEND_SLASH=False added"
